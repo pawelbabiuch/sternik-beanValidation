@@ -9,7 +9,7 @@ public class BeanWithPast {
     @Past
     private LocalDate date;
 
-    @Past(message="{pl.sternik.kk.bv.Past}")
+    @Past(message="{pl.sternik.pb.bv.Past}")
     private LocalDateTime dateTime;
 
     public LocalDate getDate() {

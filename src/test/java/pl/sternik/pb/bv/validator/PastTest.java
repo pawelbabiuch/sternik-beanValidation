@@ -54,8 +54,8 @@ public class PastTest {
         Set<ConstraintViolation<BeanWithPast>> violations;
 
         SUT.setDateTime(LocalDateTime.now());
-        //System.out.println("Depends on speed....!");
-//        Thread.sleep(10);
+        System.out.println("Depends on speed....!");
+        Thread.sleep(3000);
         violations = validateClass(SUT);
         assertEquals(1, violations.size());
         System.out.println("Now!");
